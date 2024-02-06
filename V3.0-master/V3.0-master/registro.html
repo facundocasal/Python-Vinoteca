@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/registro.css">
+    <link rel="stylesheet" href="estilos/Asociate.css">
+    <link rel="stylesheet" href="estilos/Beneficios.css">
+    <link rel="stylesheet" href="estilos/General.css">
+    <link rel="stylesheet" href="estilos/Vinos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/home.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="header-logo">
+          <a href="index.html">
+            <img src="img/grape.png" alt="">
+          </a>
+        </div>
+        <div class="header-menu">
+          <nav>
+            <ul>
+              <li><a href="Vinos.html">Vinos</a></li>
+              <li><a href="Beneficios.html">Beneficios</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-boton">
+          <a class="btn" href="registro.html">¡Registrate!</a>
+        </div>
+      </header>
+
+      <h1> Formulario de registro </h1>
+
+    <div class="container">
+        <div class="form-content">
+            <h1 id="title"> Registro</h1>
+            <div class="btn-field">
+              <button id="registerTab" type="button">Registro</button>
+              <button id="loginTab" type="button" class="disable">Login</button>
+            </div>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="nameInput">
+                        <input type="text" name="name"  id="name" placeholder="Nombre">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-field" id="lastNameInput">
+                        <input type="text" name="lastName" required id="lastName" placeholder="Apellido">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-field" id="emailInput">
+                        <input type="email" name="email" required id="email" placeholder="Mail">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-field" id="passwordInput">
+                        <input type="password" name="password" required id="password"  placeholder="Contraseña">
+                    </div>
+                </div>
+                <div class="input-group">
+                  <div class="box-msj" >
+                    <p id="msj" ></p>
+                  </div>
+              </div>
+                <div class="btn-action ">
+                    <button id="register" type="button">Registrarme</button>
+                    <button id="login" type="button" class="disable">Acceder</button>
+                </div>
+                <p id="msj"></p>
+            </form>
+        </div>
+    </div>
+
+    <footer class="mi-footer">
+        <div class="texto-footer">
+          <p>&copy; Copyright - 2023. Todos los derechos reservados.</p>
+        </div>
+        <a class="link-footer" href="mailto:clubdevinos@gmail.com">
+          <div class="icon-footer">
+            <div class="icono">
+              <span class="fas fa-envelope"></span>
+            </div>
+        </a>
+        <a class="link-footer" href="https://twitter.com/">
+          <div class="icono">
+            <span class="fab fa-twitter"></span>
+          </div>
+        </a>
+        <a class="link-footer" href="https://instagram.com/">
+          <div class="icono">
+            <span class="fab fa-instagram"></span>
+          </div>
+        </a>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="script/registro.js"></script>
+</body>
+
+</html>
